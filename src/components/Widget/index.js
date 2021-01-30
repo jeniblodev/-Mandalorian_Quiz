@@ -7,7 +7,7 @@ const Widget = styled.div`
   background-color: #1C1814;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.3);
 
   h1, h2, h3 {
     font-size: 18px;
