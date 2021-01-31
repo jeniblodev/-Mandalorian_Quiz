@@ -1,28 +1,102 @@
 {
     "bg": "https://images.wallpapersden.com/image/download/the-mandalorian-2_bGhnbGyUmZqaraWkpJRnamtlrWZlbWU.jpg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Mandalorian Quiz",
+    "description": "Teste os seus conhecimentos sobre The Mandalorian!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://i.pinimg.com/originals/dd/5c/a7/dd5ca7ceedda77ab454f5ffa396be5d5.gif",
+        "title": "Quantas temporadas tem a série The Mandalorian?",
+        "description": "",
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "3",
+          "2",
+          "4",
+          "1"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://64.media.tumblr.com/a732140dc5e8e9d74d4416bc8ddfec6a/2747269116704376-65/s540x810/86065e132571341b61fe5d469090ba198f3e2a60.gifv",
+        "title": "Qual o nome da nave de Mando?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+           "Star Crest",
+           "Slave I",
+           "Millenium Falcon",
+           "Razor Crest"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/ff/81/cd/ff81cd58914f8fe5eef2566033cf565b.gif",
+        "title": "Quantos anos tem Baby Yoda?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "10",
+           "50",
+           "70",
+           "20"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/ed8d93c72d5c65971dbe24897002a4be/3b6dd51f7210f955-0f/s400x600/5fba8a7eac82820cfedcd087a4fd1de384460050.gifv",
+        "title": "Quem foi o primeiro personagem a ver o rosto de Mando?",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "IG-88",
+           "Cara Dune",
+           "Baby Yoda",
+           "Fennec Shand"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/85/76/10/857610b192b42ea71d293aa00b21a7ee.gif",
+        "title": "O que acontece quando Baby Yoda usa muito a força?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "Fica com fome",
+           "Fica com sono",
+           "Fica irritado",
+           "Fica triste"
+        ]
+      }, 
+      {
+        "image": "https://osescapistaspodcast.com.br/wp-content/uploads/2020/12/tenor.gif",
+        "title": "Na segunda temporada Ahsoka Tano revela o nome de Baby Yoda, qual é?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+           "Groot",
+           "Godah",
+           "Gorgon",
+           "Grogu"
+        ]
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvoNFXdtRMhFspV7sQuhn4jldm1oFEQgdqg&usqp=CAU",
+        "title": "Quem salvou Mando e sua tripulação das Aranhas de Gelo no planeta gelado?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+           "O povo de Areia",
+           "Pilotos de Tie Figth",
+           "Pilotos dos X-Wings",
+           "Baby Yoda"
+        ]
+      },
+      {
+        "image": "https://media1.tenor.com/images/1f9ed733e688756fc0fcddd1b76a0749/tenor.gif",
+        "title": "Qual o nome dos droids enviados por Moff Gideon para capturar Baby Yoda?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "Dark Troopers",
+           "EV-9D9",
+           "K-2S0",
+           "Droideka"
         ]
       }
     ],
@@ -35,7 +109,7 @@
         "secondary": "#f8a676",
         "mainBg": "#181818",
         "contrastText": "#FFFFFF",
-        "wrong": "#FF5722",
+        "wrong": "#a02725",
         "success": "#4CAF50"
       },
       "borderRadius": "4px"

@@ -22,10 +22,10 @@ export default function Home() {
         <LogoQuiz />
         <Widget>
           <Widget.Header>
-              <h1>Mandalorian Quiz</h1>
+              <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p> Teste os seus conhecimentos sobre The Mandalorian!</p>
+            <p>{db.description}</p>
             <form onSubmit={function(infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
