@@ -101,7 +101,10 @@
       }
     ],
     "external": [
-      ""
+      "https://starwarsquiz.isaacpontes.vercel.app/",
+      "https://quiz-starwars.matheusdias20.vercel.app/",
+      "https://imersao-react-next-js.matheusmuriel.vercel.app/",
+      "https://quiz-react.brenoha.vercel.app/"
     ],
     "theme": {
       "colors": {

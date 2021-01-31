@@ -1,11 +1,12 @@
 import React from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import LogoQuiz from '../src/components/LogoQuiz';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import Button from '../src/components/Button';
-import AlternativesForm from '../src/components/AlternativesForm';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import LogoQuiz from '../../src/components/LogoQuiz';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import Button from '../../src/components/Button';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 function ResultWidget({ results }) {
   return (
@@ -28,7 +29,7 @@ function ResultWidget({ results }) {
           {' '} ponto(s)!</h3>
   
           <a href='/'><Button type= 'submit' style={{ marginTop: '20px'}}>Jogar de Novo</Button></a>
-          <a href='https://aluraquiz-base.alura-challenges.vercel.app/contribuidores'><Button type= 'submit' style={{ marginTop: '20px'}}>Divirta-se com mais Quizes!</Button></a>
+          <a href='https://aluraquiz-base.alura-challenges.vercel.app/contribuidores' target='_blank'><Button type= 'submit' style={{ marginTop: '20px'}}>Divirta-se com mais Quizes!</Button></a>
       </Widget.Content>
     </Widget>
   );
@@ -64,7 +65,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
@@ -96,7 +97,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 2 * 1000);
+            }, 3 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
@@ -131,8 +132,20 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && isCorrect && <div style={{ textAlign:'center' }}>
+             <p style={{marginTop:'20px', fontSize:'15px'}}>Isso aí, você acertou!</p>
+             <span style={{display:'inline-block', borderRadius:'50%', overflow:'hidden', width:'100px', height:'100px'}}>
+               <img style={{ width:'100%', height:'100%', objectFit:'cover' }} src='https://media.tenor.com/images/66321be3de75161c1141da9810fd0c61/tenor.gif'></img>
+             </span>
+          </div>
+           }
+          {isQuestionSubmited && !isCorrect && <div style={{ textAlign:'center' }}>
+             <p style={{marginTop:'20px', fontSize:'15px'}}>Que pena, você errou!</p>
+             <span style={{display:'inline-block', borderRadius:'50%', overflow:'hidden', width:'100px', height:'100px'}}>
+               <img style={{ width:'100%', height:'100%', objectFit:'cover' }} src='https://media1.tenor.com/images/8dae0da4430ecd54d1097654ead8397a/tenor.gif'></img>
+             </span>
+          </div>
+          }
         </AlternativesForm>
       </Widget.Content>
     </Widget>
